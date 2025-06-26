@@ -9,19 +9,19 @@ if answer1 == "LINTERNA":
     print("Tomaste la linterna. Sus baterías están agotadas, la luz que emana es débil. Logras ver una puerta y decides entrar ahí, una vez la pesada puerta se cierra escuchas un ruido, uno distinto al del metal chocando contra el marco de la puerta ¿Ahora qué?")
     print("CAMINAR -    Seguir caminando, buscando una salida")
     print("ESPERAR -    Apagar la linterna y esperar")
-    answer1 = input()
+    answer1 = input().strip().lower()
     
     if answer1 == "CAMINAR":
         print("Sigues caminando, buscando una salida: Al seguir caminando, la linterna muestra un cuerpo extraño. Al verlo de reojo empiezas a correr. Escuchas fuertes pasos detrás de ti que te persiguen. Logras escapar escondiéndote debajo de una repisa")
         print("BUSCAR -     Alumbrar y buscar")
         print("RASTRAS -    Agacharte y alejarte a rastras")
-        answer1 = input()
+        answer1 = input().strip().lower()
         
         if answer1 == "BUSCAR":
             print("Al buscar logras encontrar un palo y una nueva linterna. Escuchas ruidos a la distancia. Que escoges")
             print("LINTERNA -   Tomar la nueva linterna")
             print("PALO -   Tomar el palo")
-            answer1 = input()
+            answer1 = input().strip().lower()
             
             if answer1 == "LINTERNA":
                 print("La nueva linterna muestra a la creatura, sin embargo, muestra tambien la salida. Echas a correr con todas tus fuerzas y logras salir. Parece que lo perdiste. Ganaste")
@@ -31,7 +31,7 @@ if answer1 == "LINTERNA":
             print("Te mueves a rastras. Llegas hasta una pared, parece haber una ventana hacia afuera. Que haras")
             print("VENTANA -    Rompes la ventana para salir, pero la creatura podria encontrarte")
             print("PUERTA -     Corres hacia la puerta, la creatura podria encontrarte")
-            
+            answer1 = input().strip().lower()
             if answer1 == "VENTANA":
                 print("Rompes la ventana y la escalas rapidamente. Te cortas y raspas todo el cuerpo. Algo te jala del pie pero logras salir. Escapas. Fin del juego")
             elif answer1 == "PUERTA":
@@ -41,14 +41,14 @@ if answer1 == "LINTERNA":
         print("Logras ver un palo y unas pilas, pero solo tienes tiempo para agarrar uno ¿Que haras?")
         print("PALO -   Tomar el palo y seguir")
         print("PILAS - Tomas las pilas y seguir")
-        answer1 = input()
+        answer1 = input().strip().lower()
         
         if answer1 == "PALO":
             print("Aquello volvio. Logras interceptarlo con el palo. Forcejeas con el hasta que logras escapar. Corres hasta lo que parece ser una salida. Esta bloqueada. Logras ver una ventana, pero no es seguro correr hacia alli. Que haces")
             print("VENTANA -    Correr hacia la ventana")
             print("PUERTA -     Forcejeas la puerta para abrirla")
             
-            answer1 = input()
+            answer1 = input().strip().lower()
             
             if answer1 == "VENTANA":
                 print("Corres hacia la ventana y te tiras. Escapas del lugar y corres hacia la libertad. Fin del Juego")
@@ -63,25 +63,25 @@ elif answer1 == "ESCALERAS":
     print("Las luces parpadean un instante y luego se apagan por completo. Todo lo que queda es el silencio... y el eco hueco de tus pasos al comenzar a subir por la escalera de emergencia. Encuentras una cuerda y otras escaleras")
     print("CUERDA -     Tomas la cuerda")
     print("ESCALERA -   Caminas hacia las escaleras")
-    answer1 = input()
+    answer1 = input().strip().lower()
     
     if answer1 == "CUERDA":
         print("Tomas la cuerda, con ella continuas por el piso. Encuentras una puerta.")
         print("PUERTA -     Forcejeas la puerta para entrar")
         print("VENTANA -    Parece haber una ventana cerca, puedes usar la cuerda para bajar")
-        answer1 = input()
+        answer1 = input().strip().lower()
         
         if answer1 == "PUERTA":
             print("Forcejeas la puerta, no logras entrar")
             print("BAJAR -    Bajar al piso anterior")
             print("SUBIR -  Subir al piso supeior")
-            answer1 = input()
+            answer1 = input().strip().lower()
             
             if answer1 == "BAJAR":
                 print("Intentas bajar las escaleras pero un ruido crujiente te advierte de su pesimo estado. Que haras")
                 print("BAJAR -  Ignorar y seguir bajando")
                 print("SUBIR -  Reflexionar y subir en su lugar")
-                answer1 = input()
+                answer1 = input().strip().lower()
                 
                 if answer1 == "BAJAR":
                     print("Bajas las escaleras. Estas de repente se rompen y caes. Te golpeas fuertemente la cabeza y te desmayas. Game Over")
@@ -89,7 +89,7 @@ elif answer1 == "ESCALERAS":
                     print("Estas en el techo. Ves unas escaleras de emergencia algo oxidadas. Escuchas pasos viniendo del piso de abajo. Parece que algo te esta buscando. No tienes mucho tiempo")
                     print("EMERGENCIA - Usar las escaleras de emergencia")
                     print("CUERDA -     Usar la cuerda para bajar")
-                    answer1 = input()
+                    answer1 = input().strip().lower()
                     
                     if answer1 == "EMERGENCIA":
                         print("Usas las escaleras de emergencia. Logras bajar hasta el suelo y salir corriendo. Escapaste")
@@ -102,7 +102,7 @@ elif answer1 == "ESCALERAS":
         print("Estas en el techo. Ves unas escaleras de emergencia algo oxidadas. Escuchas pasos viniendo del piso de abajo. Parece que algo te esta buscando. No tienes mucho tiempo")
         print("EMERGENCIA - Usar las escaleras de emergencia")
         print("CUERDA -     Usar la cuerda para bajar")
-        answer1 = input()
+        answer1 = input().strip().lower()
                     
         if answer1 == "EMERGENCIA":
             print("Usas las escaleras de emergencia. Logras bajar hasta el suelo y salir corriendo. Escapaste")
