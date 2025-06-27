@@ -7,4 +7,4 @@ def calcular_area_circulo(radio):
 
 radio_circulo = int(input("Dime el radio de un circulo: "))
 area_circulo = calcular_area_circulo(radio_circulo)
-print(f"El area del circulo es: {area_circulo}")
+print(f"El area del circulo es: {area_circulo:.2f}")
