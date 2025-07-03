@@ -1,8 +1,8 @@
-cesta_de_compra = [] # Aquí se almacenarán los elementos de la cesta
+cesta_de_compra = [] 
 
 opcion_salir = False
 while not opcion_salir:
-    # Mostrar el menú
+    #  menú
     print("\n--- Menú de Opciones ---")
     print("1. Agregar un nuevo elemento")
     print("2. Mostrar el contenido de la cesta de la compra")
@@ -14,7 +14,7 @@ while not opcion_salir:
     opcion = input("Elige una opción (1-5): ")
 
     if opcion == '1':
-        # Agregar un nuevo elemento
+        
         item = input("Ingresa el nombre del elemento a agregar: ")
         if item:
             cesta_de_compra.append(item)
@@ -23,7 +23,7 @@ while not opcion_salir:
             print("No ingresaste ningún elemento. Intenta de nuevo.")
 
     elif opcion == '2':
-        # Mostrar el contenido de la cesta de la compra
+        
         if not cesta_de_compra:
             print("Tu cesta de compra está vacía.")
         else:
@@ -35,11 +35,11 @@ while not opcion_salir:
             print("-----------------------------")
 
     elif opcion == '3':
-        # Eliminar un elemento
+        
         if not cesta_de_compra:
             print("La cesta está vacía, no hay elementos para eliminar.")
         else:
-            # Mostrar cesta para que el usuario elija
+            
             print("\n--- Contenido de tu Cesta ---")
             i = 1
             while i <= len(cesta_de_compra):
@@ -53,21 +53,21 @@ while not opcion_salir:
                 
                 if entrada == '0':
                     print("Eliminación cancelada.")
-                    elemento_valido = True # Para salir del bucle interno
+                    elemento_valido = True 
                 elif entrada.isdigit():
-                    indice = int(entrada) - 1 # Convertir a índice de lista (base 0)
+                    indice = int(entrada) - 1 
                     
                     if indice >= 0 and indice < len(cesta_de_compra):
                         item_eliminado = cesta_de_compra.pop(indice)
                         print(f"'{item_eliminado}' ha sido eliminado de tu cesta.")
-                        elemento_valido = True # Para salir del bucle interno
+                        elemento_valido = True 
                     else:
                         print("Número de elemento inválido. Por favor, ingresa un número dentro del rango.")
                 else:
                     print("Entrada no válida. Por favor, ingresa un número.")
 
     elif opcion == '4':
-        # Calcular el total (simulado)
+        
         if not cesta_de_compra:
             print("La cesta está vacía, no hay total que calcular.")
         else:
