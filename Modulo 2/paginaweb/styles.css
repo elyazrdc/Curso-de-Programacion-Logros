@@ -27,6 +27,7 @@ body {
     flex-direction: column;
     max-width: var(--max-width);
     margin: auto;
+    overflow: hidden;
 }
 
 nav {
@@ -126,6 +127,59 @@ nav {
     background-color: var(--white);
 }
 
+.scroll__bottom {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -5rem) rotate(-90deg);
+    animation: scoll-down 2s linear infinite;
+    
+}
+
+.scroll__bottom a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.scroll__bottom span {
+    display: block;
+    font-size: 1.2rem;
+    transform: rotate(90deg);
+    color: var(--white);
+}
+
+@keyframes scroll-down {
+    0% {
+        translate: 0 0;
+    }
+    50% {
+        translate: 0 10px;
+    }
+    100% {
+        translate: 0 0;
+    }
+}
+
+.socials {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials a {
+    text-decoration: none;
+    padding: 6px 8px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--white);
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
 @media (width > 540px) {
     .section__container h1, .section__container h2 {
         font-size: 5.5rem;
