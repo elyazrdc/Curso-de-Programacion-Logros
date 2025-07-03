@@ -80,7 +80,7 @@ while not opcion_salir:
 
     elif opcion == '5':
         # Salir del programa
-        print("¡Gracias por usar la aplicación de la cesta de compra! ¡Hasta luego!")
+        print("Gracias por usar la aplicación de la cesta de compra")
         opcion_salir = True # Cambiar la bandera para terminar el bucle principal
 
     else:
