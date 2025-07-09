@@ -6,12 +6,22 @@
 
 #include<iostream>
 
-void modificarPorValor(int valor) {
-    
+int modificarPorValor(int valor) {
+   int suma = valor + 10;
+   return suma;
 }
 
-
+int modificarPorReferencia(int valor) {
+    int suma = valor +10;
+    return suma;
+}
 
 int main() {
+    int numero = 20;
+    std::cout << "\nValor del numero " << numero;
+    int numero2 = modificarPorValor(numero);
+    std::cout << "\nValor del numero modificado por valor " << numero2;
+    int numero3 = modificarPorReferencia(numero2);
+    std::cout << "\nValor del numero modificador por referencia " << numero3;
     return 0;
 }
