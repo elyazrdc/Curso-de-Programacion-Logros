@@ -289,19 +289,57 @@ h3.my-profession {
     /* background: var(--skin-color);
     color: white; */
     color: var(--skin-color);
-    border: 2px solid var(--skin-color);
+    /*border: 2px solid var(--skin-color);*/
     border-radius: 12px;
     display: inline-block;
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-top: 2px solid var(--skin-color);
+    border-left: 2px solid var(--skin-color);
+    left: 20px;
+    top: -20px;
+
+    animation-name: cambioSuaveDeColor;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-bottom: 2px solid var(--skin-color);
+    border-right: 2px solid var(--skin-color);;
+    right: 20px;
+    bottom: -20px;
+
+    animation-name: cambioSuaveDeColorRight;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
 .btn:hover {
-    color: white;
+    color: var(--text-black-700);
     border: none;
-    transform: scale(1.05);
-    
+    transform: scale(1.15);
+    font-weight: 600;
+    position: relative;
+
+    /*
     background-color: var(--text-black-700);
-    /* color: var(--text-black-700); */
+     color: var(--text-black-700); */
 }
 
 /* ABOUT  */
@@ -611,38 +649,38 @@ h3.my-profession {
 
 @keyframes cambioSuaveDeColor {
     0% {
-        border-top: 12px solid var(--text-black-900);
-        border-left: 12px solid var(--text-black-900);
+        border-top: 6px solid var(--text-black-900);
+        border-left: 6px solid var(--text-black-900);
         transform: scale(1); /* Sin escala inicial */
     }
     50% {
-        border-top: 12px solid var(--skin-color);
-        border-left: 12px solid var(--skin-color); /* Azul Pizarra Medio */
+        border-top: 6px solid var(--skin-color);
+        border-left: 6px solid var(--skin-color); /* Azul Pizarra Medio */
         left: -8px;
         /* transform: scale(1.25); Ligeramente más grande en el medio */
     }
     100% {
-        border-top: 12px solid var(--text-black-900);
-    border-left: 12px solid var(--text-black-900); /* Vuelve a Tomate */
+        border-top: 6px solid var(--text-black-900);
+    border-left: 6px solid var(--text-black-900); /* Vuelve a Tomate */
         transform: scale(1); /* Vuelve a la escala original */
     }
 }
 
 @keyframes cambioSuaveDeColorRight {
     0% {
-        border-right: 12px solid var(--text-black-900);
-        border-bottom: 12px solid var(--text-black-900);
+        border-right: 6px solid var(--text-black-900);
+        border-bottom: 6px solid var(--text-black-900);
         transform: scale(1); /* Sin escala inicial */
     }
     50% {
-        border-right: 12px solid var(--skin-color);
-        border-bottom: 12px solid var(--skin-color); /* Azul Pizarra Medio */
-        right: 8px;
+        border-right: 6px solid var(--skin-color);
+        border-bottom: 6px solid var(--skin-color); /* Azul Pizarra Medio */
+        right: -8px;
         /* transform: scale(1.25); Ligeramente más grande en el medio */
     }
     100% {
-        border-right: 12px solid var(--text-black-900);
-    border-bottom: 12px solid var(--text-black-900); /* Vuelve a Tomate */
+        border-right: 6px solid var(--text-black-900);
+    border-bottom: 6px solid var(--text-black-900); /* Vuelve a Tomate */
         transform: scale(1); /* Vuelve a la escala original */
     }
 }
