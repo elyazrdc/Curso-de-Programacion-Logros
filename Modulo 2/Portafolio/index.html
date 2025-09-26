@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Elias Rivas</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f82a950e86.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,28 +15,29 @@
             
             <div class="nav-toggler">
                 <i class="fa-solid fa-bars"></i>
-                <!-- <span></span> -->
+                <span></span>
             </div>
             <ul>
-                <li class="active"><a href="" ><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#about-section"><i class="fa-solid fa-address-card"></i>Acerca De</a></li>
-                <li><a href="#service-section"><i class="fa-solid fa-bars"></i>Servicios</a></li>
-                <li><a href="#portfolio-section"><i class="fa-solid fa-briefcase"></i>Portafolio</a></li>
-                <li><a href="#contact-section"><i class="fa-solid fa-id-badge"></i>Contacto</a></li>
+                <li id="home-link" class="aside-item active"><a href="#" ><i class="fa-solid fa-house"></i>Home</a></li>
+                <li id="about-link" class="aside-item"><a href="#" ><i class="fa-solid fa-address-card"></i>Acerca De</a></li>
+                <li id="service-link" class="aside-item"><a href="#"><i class="fa-solid fa-bars"></i>Servicios</a></li>
+                <li id="portfolio-link" class="aside-item"><a href="#portfolio-section"><i class="fa-solid fa-briefcase"></i>Portafolio</a></li>
+                <li id="contact-link" class="aside-item"><a href="#contact-section"><i class="fa-solid fa-id-badge"></i>Contacto</a></li>
             </ul>
         </aside>
     <!-- Final Aside  -->
 
     <!-- Main Content  -->
         <div class="main-content">
-            <section class="home section">
+            <section class="home section " id="home-section" >
                 
                 <div class="container">
                     <div class="row">
                         <div class="home-info padding-16">
                             <h3 class="hello">Hola, soy <span class="name">Elias</span></h3>
                             <h3 class="my-profession">Soy un <span class="typing" id="typing"></span></h3>
-                            <p>Soy un desarrollador web con x años de experiencia. Mi principal area es el website desing, el diseño grafico, y mas... blabla snore mimi mimi Thats enough mister West please no more today</p>
+                            <h3 class="slogan">Cuando se trata de la <span>programación</span>, somos la <span>excepción</span></h3>
+                            <p>Soy un desarrollador web, diseñador y programador. Mi principal area es el website design, el diseño grafico, y mas... blabla snore mimi mimi Thats enough mister West please no more today</p>
                             <a href="#contact-section" class="btn">Contactame</a>
                         </div>
                         <div class="home-img padding-16">
@@ -45,114 +47,134 @@
                 </div>
             </section>
             <!-- SECCION ABOUT INICIO -->
-            <section class="about section" id="about-section">
-                <div class="row">
-                    <div class="section-title padding-16">
-                        <h2>About Me</h2>
+            <section class="about section hidden hidden-complete" id="about-section">
+                <div class="container">
+                     <div class="row">
+                        <div class="section-title padding-16">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padding-16">
+                            <div class="about-text">
+                                <h3>Soy Elias Rivas, <span class="name">Desarrollador Web</span></h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elite</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="personal-info padding-16">
+                                    <div class="row">
+                                        <div class="info-item">
+                                            <p>Cumpleaño<span>20 septiembre</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Edad<span>20</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Email<span>eliasdavid200412@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Tlf<span>412-7663390</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Degree<span>20 sept</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="button padding-16">
+                                        <a href="" class="btn">Descargar CV</a>
+                                        <a href="#contact-section" class="btn">Contacto</a>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                
+
+
+                                
+
+                                
+                                
+                            </div>
+
+                            <div class="row">
+                                
+                                <div class="skills padding-16">
+                                    <h1>Tecnologias que domino</h1>
+                                    <div class="row">
+                                        
+                                        <div class="skill-item">
+                                            <h3><i class="fa-brands fa-html5"></i>HTML</h3>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h3><i class="fa-brands fa-css3-alt"></i>CSS</h3>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h3><i class="fa-brands fa-js"></i>JavaScript</h3>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h3><i class="fa-brands fa-react"></i>React</h3>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h3><i class="fa-brands fa-php"></i>PHP</h3>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h3><i class="fa-brands fa-laravel"></i>Laravel</h3>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h3><i class="fa-brands fa-python"></i></i>Python</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                    <div class="education padding-16">
+                                        <h3 class="title">Educacion</h3>
+                                        <div class="timeline-box box-shadow">
+                                            <h3>FORMACION</h3>
+                                            <i class="fa-solid fa-person"></i><i class="fa-solid fa-id-card"></i><i class="fa-solid fa-computer"></i>
+                                            <h4>2022 - 2026 <span>UNEFA</span></h4>
+                                            
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem error quo. Amet, nisi dolorum cumque delectus aliquam exercitationem veniam, pariatur nostrum odit iste dignissimos repellendus rem aspernatur laborum officia!</p>
+                                            <h4>2025 <span>LOGROS</span></h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia earum dolores, consequatur quo nihil reiciendis aliquid debitis tempore eligendi suscipit vel, ex a aut iusto voluptatibus odio placeat. Assumenda!</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="experience padding-16">
+                                        <h3 class="title">Experiencia</h3>
+                                        <div class="timeline-box box-shadow">
+                                            <h3>FORMACION</h3>
+                                            <i class="fa-solid fa-person"></i><i class="fa-solid fa-id-card"></i><i class="fa-solid fa-computer"></i>
+                                            <h4>2022 - 2026 <span>UNEFA</span></h4>
+                                            
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem error quo. Amet, nisi dolorum cumque delectus aliquam exercitationem veniam, pariatur nostrum odit iste dignissimos repellendus rem aspernatur laborum officia!</p>
+                                            <h4>2025 <span>LOGROS</span></h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia earum dolores, consequatur quo nihil reiciendis aliquid debitis tempore eligendi suscipit vel, ex a aut iusto voluptatibus odio placeat. Assumenda!</p>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                            
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="about-content padding-16">
-                        <div class="about-text">
-                            <h3>Soy Elias Rivas, <span>Desarrollador Web</span></h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elite</p>
-                        </div>
-
-                        <div class="row">
-                            <div class="personal-info padding-16">
-                                <div class="row">
-                                    <div class="info-item">
-                                        <p>Cumpleaño<span>20 septiembre</span></p>
-                                    </div>
-                                    <div class="info-item">
-                                        <p>Edad<span>20</span></p>
-                                    </div>
-                                    <div class="info-item">
-                                        <p>Email<span>eliasdavid200412@gmail.com</span></p>
-                                    </div>
-                                    <div class="info-item">
-                                        <p>Tlf<span>412 7663390</span></p>
-                                    </div>
-                                    <div class="info-item">
-                                        <p>Degree<span>20 sept</span></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                <div class="button padding-16">
-                                    <a href="" class="btn">Descargar CV</a>
-                                    <a href="#contact-section" class="btn">Contacto</a>
-                                </div>
-                            </div>
-                            </div>
-                            
-                            
-
-
-                            <div class="skills padding-16">
-                                <div class="row">
-                                    <div class="skill-item">
-                                        <h3><i class="fa-brands fa-html5"></i>HTML</h3>
-                                    </div>
-                                    <div class="skill-item">
-                                        <h3><i class="fa-brands fa-css3-alt"></i>CSS</h3>
-                                    </div>
-                                    <div class="skill-item">
-                                        <h3><i class="fa-brands fa-js"></i>JavaScript</h3>
-                                    </div>
-                                    <div class="skill-item">
-                                        <h3><i class="fa-brands fa-php"></i>PHP</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-                            
-                        </div>
-
-                        <div class="row">
-                                <div class="education padding-16">
-                                    <h3 class="tittle">Educacion</h3>
-                                    <div class="timeline-box box-shadow">
-                                        <h3>FORMACION</h3>
-                                        <i class="fa-solid fa-person"></i><i class="fa-solid fa-id-card"></i><i class="fa-solid fa-computer"></i>
-                                        <h4>2022 - 2026 <span>UNEFA</span></h4>
-                                        
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem error quo. Amet, nisi dolorum cumque delectus aliquam exercitationem veniam, pariatur nostrum odit iste dignissimos repellendus rem aspernatur laborum officia!</p>
-                                        <h4>2025 <span>LOGROS</span></h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia earum dolores, consequatur quo nihil reiciendis aliquid debitis tempore eligendi suscipit vel, ex a aut iusto voluptatibus odio placeat. Assumenda!</p>
-                                       
-                                    </div>
-                                </div>
-                                <div class="experience padding-16">
-                                    <h3 class="tittle">Experiencia</h3>
-                                    <div class="timeline-box box-shadow">
-                                        <h3>FORMACION</h3>
-                                        <i class="fa-solid fa-person"></i><i class="fa-solid fa-id-card"></i><i class="fa-solid fa-computer"></i>
-                                        <h4>2022 - 2026 <span>UNEFA</span></h4>
-                                        
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem error quo. Amet, nisi dolorum cumque delectus aliquam exercitationem veniam, pariatur nostrum odit iste dignissimos repellendus rem aspernatur laborum officia!</p>
-                                        <h4>2025 <span>LOGROS</span></h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia earum dolores, consequatur quo nihil reiciendis aliquid debitis tempore eligendi suscipit vel, ex a aut iusto voluptatibus odio placeat. Assumenda!</p>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-
-                        
-                    </div>
-                </div>
-
-                
             </section>
+
+
             <!-- SERVICIOS  -->
-             <section class="service section" id="service-section">
+
+
+             <section class="service section hidden hidden-complete" id="service-section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padding-16">
                             <h2>Servicios</h2>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row gap-8">
                         <div class="service-item padding-16">
                             <div class="service-item-inner">
                                 <i class="fa-solid fa-computer"></i>
@@ -174,7 +196,7 @@
 
              <!-- PORTAFOLIO  -->
 
-             <section class="portfolio section" id="portfolio-section">
+             <section class="portfolio section hidden hidden-complete" id="portfolio-section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padding-16">
@@ -191,16 +213,32 @@
                         <div class="portfolio-item padding-16">
                             <div class="portfolio-item-inner">
                                 <div class="portfolio-img">
-                                    <img src="assets/bar_girl.jpeg" alt="">
+                                    <img src="assets/ford_gt.jpg" alt="">
                                 </div>
+                                <h3>Landing Page Revista de Autos</h3>
+                                <p>Un blog de autos</p>
+                                <p>Hecho con HTML,CSS y JavaScript</p>
                             </div>
                         </div>
 
                         <div class="portfolio-item padding-16">
                             <div class="portfolio-item-inner">
                                 <div class="portfolio-img">
-                                    <img src="assets/jhon_marston.jpg" alt="">
+                                    <!-- <img src="assets/bar_girl.jpeg" alt=""> -->
+                                     <img src="assets/Reclamos_Proyecto.png" alt="Sistema de Reclamos">
                                 </div>
+                                <h3>Sistema de Reclamos</h3>
+                                <p>Localidad Maracaibo, Zulia, Venezuela</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padding-16">
+                            <div class="portfolio-item-inner">
+                                <div class="portfolio-img">
+                                    <img src="assets/Calculadora_Proyecto.png" alt="">
+                                </div>
+                                <h3>Calculadora</h3>
+                                <p>Hecho en HTML, CSS Y JavaScript</p>
                             </div>
                         </div>
 
@@ -209,34 +247,29 @@
                                 <div class="portfolio-img">
                                     <img src="assets/Profundo - The Boys.jpeg" alt="">
                                 </div>
+                                <h3>Bot de Telegram</h3>
+                                <p>Hecho con Python</p>
                             </div>
                         </div>
 
-                        <div class="portfolio-item padding-16">
-                            <div class="portfolio-item-inner">
-                                <div class="portfolio-img">
-                                    <img src="assets/ford_gt.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
              </section>
 
              <!-- CONTACTO  -->
 
-             <section class="contact section" id="contact-section">
+             <section class="contact section hidden hidden-complete" id="contact-section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padding-16">
                             <h2>Contacto</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title">Tienes alguna pregunta?</h3>
+                    <h3 class="contact-title">¿Tienes alguna pregunta?</h3>
                     <h4 class="contact-sub-title">Contactame</h4>
                     <div class="row">
                         <div class="contact-info-item padding-16">
-                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
                             <h4>Numero telefonico</h4>
                             <p>0412 766 3390</p>
                         </div>
@@ -246,6 +279,16 @@
                             <h4>Email</h4>
                             <p>eliasdavid200412@gmail.com</p>
                         </div>
+                        <div class="contact-info-item padding-16">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <h4>Linkedin</h4>
+                            <p>eliasdavid2004</p>
+                        </div>
+                        <div class="contact-info-item padding-16">
+                            <i class="fa-brands fa-instagram"></i>
+                            <h4>Instagram</h4>
+                            <p>eliasrdc__</p>
+                        </div>
                     </div>
                 </div>
              </section>
@@ -253,5 +296,9 @@
         </div>
     </div>
 <script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
