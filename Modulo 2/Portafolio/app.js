@@ -4,6 +4,26 @@ let charIndex = 0;
 const delayAfterType = 3000;
 const delayAfterErase = 500;
 const eraseSpeed = 50;
+let links = document.querySelectorAll("a");
+const mainContent = document.querySelector('.main-content');
+const selection = document.querySelectorAll('.selection');
+console.log(selection)
+
+var sfx = new Audio('Arkham-UI-Sound.mp3');
+
+function playSFX() {
+    sfx.currentTime = 0;
+    sfx.play();
+}
+
+if (sfx) {
+    links.forEach((link) => {
+        link.addEventListener('mouseover', () => { playSFX(); });
+        link.addEventListener('click', () => { playSFX(); });
+        
+    });
+}
+
 
 // BOTONES DEL ASIDE
 
@@ -39,16 +59,23 @@ asideItem.forEach((element) => {
 
         sectionArray.forEach(section => {
             section.classList.add('hidden');
-            setTimeout(() => {
+            // setTimeout(() => {
+                
+            // }, 900);
+            //section.classList.add('hidden-complete');
+            function animationEnd() {
                 section.classList.add('hidden-complete');
-            }, 900);
+            }
+            section.addEventListener("animationend", animationEnd(), { once: true });
+            
         });
-
+        console.log("holalalala")
         targetSection.classList.remove('hidden');
-
-        setTimeout(() => {
-            targetSection.classList.remove('hidden-complete');
-        }, 900);
+        targetSection.classList.remove('hidden-complete');
+        // setTimeout(() => {
+        //     targetSection.classList.remove('hidden-complete');
+        // }, 900);
+        targetSection.classList.add('fadeIn');
     })
 });
 
@@ -78,3 +105,13 @@ function typeWriter() {
 
 // Inicia el efecto cuando la página carga
 document.addEventListener('DOMContentLoaded', typeWriter);
+document.addEventListener('DOMContentLoaded', function() {
+    // setTimeout(() => {
+    //     mainContent.style.animation = 'fadeIn 3s ease';
+        
+    // }, 0);
+    mainContent.style.animation = 'fadeIn 3s ease';
+    console.log('hola');
+    
+    //selection.style.animation = 'slideToRIght 1.5s ease';
+});
